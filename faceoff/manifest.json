@@ -1,0 +1,19 @@
+{
+  "name": "faceoff",
+  "version": "0.1",
+  "background": { "scripts": ["background.js"] },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["jquery-1.8.1.min.js"]
+    }
+  ],
+  "permissions": [
+    "tabs", "http://*/*", "https://*/*"
+  ],
+  "browser_action": {
+    "name": "Face off!",
+    "default_icon": "icon.png"
+  },
+  "manifest_version": 2
+}
